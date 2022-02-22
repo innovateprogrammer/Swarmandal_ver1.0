@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Online Swarmandal</title>
+    <link rel="stylesheet" href="src/style.css" />
+    
+    <link rel="icon" href="src/img/icon.jpg">
+  </head>
+  
+  
+  <body>
+      <nav>
+          <img class="logo" src="src/img/icon.jpg"><h2>Online Swarmandal Developed By CoderZDevs</h2>
+      </nav>
+      <div class="bg">
+        <div class="container">
+            <div class="head">
+            <h3 class="label1">Raag : </h3>
+
+                <div class="dropdown">
+                    <button class="dropbtn"><span id="rsc">Select</span>&nbsp;<img src="src/img/cheveron-down.svg"></button>
+                <div class="dropdown-content">
+                    <button class="scale" id="Charu" onclick="loadraag('Charu')">Charukeshi</button>
+                    <button class="scale" id="Kir" onclick="loadraag('Kir')">Kirwani</button>
+                    <button class="scale" id="Pur" onclick="loadraag('Pur')">Puriya</button>
+                    <button class="scale" id="Bhai" onclick="loadraag('Bhai')">Bhairav</button>
+                    <button class="scale" id="Bhup" onclick="loadraag('Bhup')">Bhupali</button>
+                    <button class="scale" id="Yam" onclick="loadraag('Yam')">Yaman</button>
+            
+                </div>
+                </div>
+            </div>
+            <div class="head">
+              <h3 class="label1">Scale : </h3>
+  
+                  <div class="dropdown">
+                      <button class="dropbtn"><span id="scc"> </span>&nbsp;<img src="src/img/cheveron-down.svg"></button>
+                  <div class="dropdown-content">
+                      <button class="scale" id="A" onclick="load('A')">A</button>
+                      <button class="scale" id="A#" onclick="load('A#')">A#</button>
+                      <button class="scale" id="B" onclick="load('B')">B</button>
+                      <button class="scale" id="C" onclick="load('C')">C</button>
+                      <button class="scale" id="C#" onclick="load('C#')">C#</button>
+                      <button class="scale" id="D" onclick="load('D')">D</button>
+                      <button class="scale" id="D#" onclick="load('D#')">D#</button>
+                      <button class="scale" id="E" onclick="load('E')">E</button>
+                      <button class="scale" id="F" onclick="load('F')">F</button>
+                      <button class="scale" id="F#" onclick="load('F#')">F#</button>
+                      
+                      <button class="scale" id="G#" onclick="load('G#')">G#</button>
+              
+                  </div>
+                  </div>
+              </div>
+              
+            <audio id="myMusic">  
+                <source src="src/files/A-Scale.mp3"/>  
+            </audio>  
+            <h3 class="label2">Volume : &nbsp;<img src="src/img/volume-up.svg"></h3>
+            <div class="c1">
+            <img class="plus" src="src/img/minus-sm.svg"><input type="range" class="slider" id="rngVolume" min="0" max="1" step=".01" value=".5"/><img class="plus" src="src/img/plus-sm.svg">
+            </div>
+            <h3 class="label2">Speed : &nbsp;<img src="src/img/clock.svg"></h3>
+            <div class="c2">
+            <img class="plus" src="src/img/minus-sm.svg"><input type="range" class="slider" id="rngSpeed" min="0" max="2" step=".01" value="1"/><img class="plus" src="src/img/plus-sm.svg">
+            </div>
+            <div class="controls">
+             
+            <button id="play" class="active"><img src="src/img/play.svg"></button>  
+            <button id="pause"><img src="src/img/stop.svg"></button> 
+            </div>
+            <div class="water"><img src="src/img/clogo.png">&nbsp;Copyright @CoderZDevs</div>
+        </div>
+      </div>
+      
+    
+    <footer>
+        <img class="logo1" src="src/img/clogo.png"><h2>Copyright@ CoderZDevs Solutions 2022 All rights reserved</h2>
+        <h4>Email:- <a href="mailto:coderzdevs@gmail.com">coderzdevs@gmail.com</a></h4>
+    </footer>
+    <!-- JavaScript file   -->
+    <script src="src/script.js"></script>
+  </body>
+
+  
+</html>
